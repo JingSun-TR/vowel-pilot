@@ -101,7 +101,7 @@ export default function EntryScreen({ onStart }) {
           />
         </motion.button>
 
-        {/* Controls hint */}
+        {/* How it works */}
         <motion.div
           className="mt-6 flex flex-wrap justify-center gap-4 text-xs text-gray-500"
           initial={{ opacity: 0 }}
@@ -109,16 +109,20 @@ export default function EntryScreen({ onStart }) {
           transition={{ delay: 1 }}
         >
           <span className="flex items-center gap-1.5">
-            <kbd className="px-2 py-0.5 bg-gray-800 rounded border border-gray-700 font-mono">←→</kbd>
+            <Mic className="w-3.5 h-3.5 text-indigo-400" />
+            マイクで発音
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="text-indigo-400">F1</span>
+            舌の高さ
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="text-purple-400">F2</span>
             前後
           </span>
           <span className="flex items-center gap-1.5">
-            <kbd className="px-2 py-0.5 bg-gray-800 rounded border border-gray-700 font-mono">↑↓</kbd>
-            高低
-          </span>
-          <span className="flex items-center gap-1.5">
-            <kbd className="px-2 py-0.5 bg-gray-800 rounded border border-gray-700 font-mono">Shift</kbd>
-            円唇
+            <span className="text-pink-400">円唇</span>
+            唇の形
           </span>
         </motion.div>
       </motion.div>
